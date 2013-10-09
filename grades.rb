@@ -1,6 +1,5 @@
-
 begin
- # raise 'A test exception.'
+# raise 'A test exception.'
  puts "I'm not raising exception"
 rescue Exception => e
   puts e.message
@@ -12,7 +11,7 @@ ensure
 end
 
  begin results = 1.upto(100) do |results|
-  # next=> with next on this line the program just exists
+# next=> with next on this line the program just exists
 puts "Please Enter Your Results For Grading:" 
 
 # validates_inclusion_of :results, :in => 0..100, :message => "Can Only be a Number Between 0 and 100."
@@ -38,13 +37,13 @@ elsif results == (69) || results >=60
   puts "That's Grade: C" + ", Good! Your GPA is: 3.5"
 elsif results == (59) || results >=50
     puts "That's Grade: D" + ", Fair! Your GPA is: 2.5"
-elsif results == (49) || results >=40
+# I substitutes elsif for next and what happens is the program skips to the else puts statement
+next results == (49) || results >=40
     puts "That's Grade: E" + ", Pass! Your GPA is: 2.0"
     
     else
-      # next=> with next on this line the program doesn't print the puts statement
+# next=> with next on this line the program doesn't print the puts statement
     puts "That's Grade: F" + ", You Failed! Your GPA is below Average"
-    next
     
   end
 end
