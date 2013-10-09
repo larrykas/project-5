@@ -1,10 +1,29 @@
 Project 5: 
 
-1. Create a loop that implements “while” and “until
-2. Create a loop that is “nested” inside another loop
-3. Implement “next” in your nested inner loop. What does this do?
-4. Raise an exception in your script
-5. Show an example of using “begin/rescue”, why would you use this in your code?
-6. Show an example of using 1 “begin” statement with multiple “rescue” statements, why would you do this?
-7. Show an example of using “ensure” with “begin/rescue”, why would you use this?
+1. Create a loop that implements “while” and “until ✔
 
+2. Create a loop that is “nested” inside another loop ✔
+
+3. Implement “next” in your nested inner loop. ✔
+What does this do?
+It skips the next line of code.
+
+4. Raise an exception in your script ✔
+
+5. Show an example of using “begin/rescue”, ✔
+why would you use this in your code?
+
+Rescuing Interrupt prevents the user from using CTRLC to exit the program.
+Rescuing SignalException prevents the program from responding correctly to signals. 
+It will be unkillable.
+Rescuing SyntaxError means that evals that fail will do so silently.
+All of these can be shown by running this program, and trying to CTRLC or kill it:
+
+6. Show an example of using 1 “begin” statement with multiple “rescue” statements, ✔
+why would you do this?
+In Ruby, the rescue clause is used, along with begin and end, to define blocks of code to handle exceptions.
+7. Show an example of using “ensure” with “begin/rescue”, ✔
+why would you use this?
+Ensure goes after the last rescue clause and contains a chunk of code that will always be executed as the block terminates. 
+It doesn’t matter if the block exits normally, if it raises and rescues an exception, 
+or if it is terminated by an uncaught exception—the ensure block will get run.
