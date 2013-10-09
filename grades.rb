@@ -10,7 +10,7 @@ ensure
   puts "Ensuring execution"
 end
 
- begin results = 1.upto(100) do |results|
+begin results = 1.upto(100) do |results|
 # next=> with next on this line the program just exists
 puts "Please Enter Your Results For Grading:" 
 
@@ -43,7 +43,7 @@ next results == (49) || results >=40
     
     else
 # next=> with next on this line the program doesn't print the puts statement
-    puts "That's Grade: F" + ", You Failed! Your GPA is below Average"
+      puts "That's Grade: F" + ", You Failed! Your GPA is below Average"
     
   end
 end
