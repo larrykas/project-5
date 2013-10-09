@@ -1,0 +1,10 @@
+Project 5: 
+
+1. Create a loop that implements “while” and “until
+2. Create a loop that is “nested” inside another loop
+3. Implement “next” in your nested inner loop. What does this do?
+4. Raise an exception in your script
+5. Show an example of using “begin/rescue”, why would you use this in your code?
+6. Show an example of using 1 “begin” statement with multiple “rescue” statements, why would you do this?
+7. Show an example of using “ensure” with “begin/rescue”, why would you use this?
+
