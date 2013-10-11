@@ -1,9 +1,11 @@
 begin
 # raise 'A test exception.'
  puts "I'm not raising exception"
-rescue Exception => e
+rescue Exception 
   puts e.message
   puts e.backtrace.inspect
+rescue AnotherTypeOfException
+  puts "I am rescued"
 else
    puts "Congratulations-- no errors!"
 ensure
